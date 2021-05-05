@@ -12,6 +12,7 @@ Student Number:
 - Check out the WaveForm and AudioBandsVisual for examples of how to call the Processing functions from other classes that are not subclasses of PApplet
 
 # Description of the assignment
+Ahsdajhdskjahsdkjhasdkjhakjdhakjsdhajkdhakjdh
 
 # Instructions
 
