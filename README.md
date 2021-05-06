@@ -94,4 +94,4 @@ The Tunnel effect
 
 Here is a youtube video where I showcase how the program runs and the different effects in it:
 
-[![YouTube](https://i9.ytimg.com/vi_webp/vsD3EG1qFpI/mqdefault.webp?time=1620312000000&sqp=CMD_z4QG&rs=AOn4CLAPhVK1yEPG9U_b426C84qVK9JfCw)](https://www.youtube.com/watch?v=vsD3EG1qFpI)
+[![YouTube](https://i.ytimg.com/an_webp/vsD3EG1qFpI/mqdefault_6s.webp?du=3000&sqp=CKaS0YQG&rs=AOn4CLA6FBmN4xsxBJrxK-kYbRDLzXvc1g)](https://www.youtube.com/watch?v=vsD3EG1qFpI)
