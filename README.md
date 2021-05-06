@@ -25,7 +25,8 @@ The user will then be able to pick from a selection of 7 effects.
 Each effect has a number key assigned to it.This is done using the switch().
 
 # What I am most proud of in the assignment
-The parts that I am most proud of in this assignment are the  
+The parts that I am most proud of in this assignment are the 4th and 5th effect that I implemented. Even though they are really simple the 4th effect with the circle and the line 
+have a nice synergy that go well with the background image. Also the 5th effect with the square layers creates calm atmosphere which in my opinion is important when listning to music and it was what I was aming for to achieve in this assignment.
 
 # Markdown Tutorial
 
