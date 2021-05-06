@@ -66,6 +66,7 @@ public class LuisVisual extends PApplet{
 
         switch (which)
         {
+            //Line effect
             case 0:
             {
                 // Iterate over all the elements in the audio buffer
@@ -77,7 +78,8 @@ public class LuisVisual extends PApplet{
                     line(i, halfHeight - lerpedBuffer[i] * halfHeight * 4, i, halfHeight + lerpedBuffer[i] * halfHeight * 4);
                 }        
                 break;
-            }   
+            }  
+            //Hourglass effect  
             case 1:
             {
                 // Iterate over all the elements in the audio buffer
@@ -91,6 +93,7 @@ public class LuisVisual extends PApplet{
                 }        
                 break;
             }
+            //Wallmount effect
             case 2:
             {
                 for (int i = 0; i < ab.size(); i++) {
@@ -105,6 +108,7 @@ public class LuisVisual extends PApplet{
                 }        
                 break;
             }
+            //Line and Circle effect
             case 3:
             {
                 float c = map(average, 1, 0, 1, 255);
@@ -124,6 +128,7 @@ public class LuisVisual extends PApplet{
                            
                 break;
             }
+            //Square layers effect 
             case 4:
             {
                 float c = map(average, 0, 1, 0, 255);
@@ -143,6 +148,7 @@ public class LuisVisual extends PApplet{
                 rect(width / 2, height / 2, size, size);
                 break;
             }
+            //All seeing eye effect
             case 5:
             {
                 float r = 1f;
@@ -164,6 +170,7 @@ public class LuisVisual extends PApplet{
                 }
                 break;
             }
+            //Tunnel effect 
             case 6:
             {
                 float c = map(average, 0, 1, 0, 255);
