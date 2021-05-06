@@ -124,7 +124,60 @@ public class LuisVisual extends PApplet{
                            
                 break;
             }
-            
+            case 4:
+            {
+                float c = map(average, 0, 1, 0, 255);
+                stroke(c, 255, 255);        
+                strokeWeight(2);
+                noFill();
+                rectMode(CENTER);
+                float size = 10 + (lerpedAverage * 500);
+                rect(width / 2, height / 2, size, size);
+                size = 50 + (lerpedAverage * 500);
+                rect(width / 2, height / 2, size, size);
+                size = 100 + (lerpedAverage * 500);
+                rect(width / 2, height / 2, size, size);
+                size = 150 + (lerpedAverage * 500);
+                rect(width / 2, height / 2, size, size);
+                size = 200 + (lerpedAverage * 500);
+                rect(width / 2, height / 2, size, size);
+                break;
+            }
+            case 5:
+            {
+                float r = 1f;
+                int numPoints = 3;
+                float thetaInc = TWO_PI / (float) numPoints;
+                strokeWeight(2);                
+                float lastX = width / 2, lastY = height / 2;
+                for(int i = 0 ; i < 1000 ; i ++)
+                {
+                    float c = map(i, 0, 300, 0, 255) % 255.0f;
+                    stroke(c, 255, 255, 100);
+                    float theta = i * (thetaInc + lerpedAverage * 5);
+                    float x = width / 2 + sin(theta) * r;
+                    float y = height / 2 - cos(theta) * r;
+                    r += 0.5f + lerpedAverage;
+                    line(lastX, lastY, x, y);
+                    lastX = x;
+                    lastY = y;
+                }
+                break;
+            }
+            case 6:
+            {
+                float c = map(average, 0, 1, 0, 255);
+                stroke(c, 255, 255);        
+                strokeWeight(2);
+                noFill();
+                for (int i=0;i<100;i++){
+                    float r= random(50,350);
+                    ellipse(r, r, r + (lerpedAverage * 300), r + (lerpedAverage * 300));
+                    
+                }
+                
+                
+            }
         }        
     }
     
