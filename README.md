@@ -1,8 +1,8 @@
 # Music Visualiser Project
 
-Name:
+Name: Luis Fernando Grand
 
-Student Number: 
+Student Number: C19403516
 
 ## Instructions
 - Fork this repository and use it a starter project for your assignment
@@ -14,10 +14,18 @@ Student Number:
 # Description of the assignment
 
 # Instructions
+To run the program click the run code button.
+There is a selection of 7 visuals.To change them press any key from 0-6
+Enjoy the show :)
 
 # How it works
+The program is quite simple to use. Once the user executes the code a new display will open.
+The mp3 file selected will start playing automatically.
+The user will then be able to pick from a selection of 7 effects.
+Each effect has a number key assigned to it.This is done using the switch().
 
 # What I am most proud of in the assignment
+The parts that I am most proud of in this assignment are the  
 
 # Markdown Tutorial
 

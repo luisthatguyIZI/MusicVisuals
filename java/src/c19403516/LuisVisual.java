@@ -14,6 +14,9 @@ public class LuisVisual extends PApplet{
     PImage img;
     float lerpedAverage = 0;
     float[] lerpedBuffer;
+    float y = 200;
+    float lerpedY = y;
+    int which = 0;
 
     public void settings()
 	{
@@ -27,8 +30,22 @@ public class LuisVisual extends PApplet{
         ab=ap.mix;
         ap.play();
         colorMode(HSB);
-        
+        lerpedBuffer = new float[width];
         img = loadImage("chill.jpeg");
+    }
+
+    public void keyPressed() {
+        if (keyCode >= '0' && keyCode <= '6') {
+            which = keyCode - '0';
+        }
+        if (keyCode == ' ') {
+            if (ap.isPlaying()) {
+                ap.pause();
+            } else {
+                ap.rewind();
+                ap.play();
+            }
+        }
     }
 
     public void draw() {
@@ -47,12 +64,34 @@ public class LuisVisual extends PApplet{
         // Move lerpedAverage 10% closer to average every frame
         lerpedAverage = lerp(lerpedAverage, average, 0.1f);
 
-        for (int i = 0; i < ab.size(); i++) {
+        switch (which)
+        {
+            case 0:
+            {
+                // Iterate over all the elements in the audio buffer
+                for (int i = 0; i < ab.size(); i++) {
 
-            float c = map(i, 0, ab.size(), 0, 255);
-            stroke(c, 255, 255);
-            lerpedBuffer[i] = lerp(lerpedBuffer[i], ab.get(i), 0.1f);        
-            line(i, halfHeight - lerpedBuffer[i] * halfHeight * 4, i, halfHeight + lerpedBuffer[i] * halfHeight * 4);
+                    float c = map(i, 0, ab.size(), 0, 255);
+                    stroke(c, 255, 255);
+                    lerpedBuffer[i] = lerp(lerpedBuffer[i], ab.get(i), 0.1f);        
+                    line(i, halfHeight - lerpedBuffer[i] * halfHeight * 4, i, halfHeight + lerpedBuffer[i] * halfHeight * 4);
+                }        
+                break;
+            }   
+            case 1:
+            {
+                // Iterate over all the elements in the audio buffer
+                for (int i = 0; i < ab.size(); i++) {
+
+                    float c = map(i, 0, ab.size(), 0, 255);
+                    stroke(c, 255, 255);
+                    lerpedBuffer[i] = lerp(lerpedBuffer[i], ab.get(i), 0.1f);
+        
+                    line(i, halfHeight - lerpedBuffer[i] * halfHeight * 5, halfHeight + lerpedBuffer[i] * halfHeight * 5, i);
+                }        
+                break;
+            }
+            
         }        
     }
     
