@@ -76,6 +76,7 @@ public void render()
 }
 ```
 These are some pictures showcaseing the different effects in the program:
+
 The line effect
 
 ![An image](images/effect1.png)
