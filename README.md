@@ -90,6 +90,8 @@ The Tunnel effect
 ![An image](images/effect6.png)
 
 
-This is a youtube video:
+
+
+Here is a youtube video where I showcase how the program runs and the different effects in it:
 
 [![YouTube](https://i9.ytimg.com/vi_webp/vsD3EG1qFpI/mqdefault.webp?time=1620312000000&sqp=CMD_z4QG&rs=AOn4CLAPhVK1yEPG9U_b426C84qVK9JfCw)](https://www.youtube.com/watch?v=vsD3EG1qFpI)
