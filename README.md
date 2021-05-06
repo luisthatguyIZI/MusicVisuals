@@ -12,6 +12,7 @@ Student Number: C19403516
 - Check out the WaveForm and AudioBandsVisual for examples of how to call the Processing functions from other classes that are not subclasses of PApplet
 
 # Description of the assignment
+In this assignment I will showcase the use of various audio visualisation effects using Java processing libraries 
 
 # Instructions
 To run the program click the run code button.
@@ -74,18 +75,33 @@ public void render()
 	ui.text(text, x + width * 0.5f, y + height * 0.5f);
 }
 ```
+These are some pictures showcaseing the different effects in the program:
 
-This is an image using a relative URL:
+The line effect
+![An image](images/effect1.png)
 
-![An image](images/p8.png)
+The hourglass effect
+![An image](images/effect0.png)
 
-This is an image using an absolute URL:
+The wallmount effect
+![An image](images/effect2.png)
 
-![A different image](https://bryanduggandotorg.files.wordpress.com/2019/02/infinite-forms-00045.png?w=595&h=&zoom=2)
+The line & circlue effect
+![An image](images/effect3.png)
+
+The Sqaure Layers effect
+![An image](images/effect4.png)
+
+The All Seeing Eye effect
+![An image](images/effect5.png)
+
+The Tunnel effect
+![An image](images/effect6.png)
+
 
 This is a youtube video:
 
-[![YouTube](http://img.youtube.com/vi/J2kHSSFA4NU/0.jpg)](https://www.youtube.com/watch?v=J2kHSSFA4NU)
+[![YouTube](https://i9.ytimg.com/vi_webp/vsD3EG1qFpI/mqdefault.webp?time=1620312000000&sqp=CMD_z4QG&rs=AOn4CLAPhVK1yEPG9U_b426C84qVK9JfCw)](https://www.youtube.com/channel/UC6raEfnkDjZDcYcDrAFm3cg/videos?view=0&sort=dd&shelf_id=0)
 
 This is a table:
 
