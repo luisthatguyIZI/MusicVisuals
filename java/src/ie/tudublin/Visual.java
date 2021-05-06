@@ -1,6 +1,7 @@
 package ie.tudublin;
 
 import processing.core.PApplet;
+import processing.core.PImage;
 import ddf.minim.*;
 import ddf.minim.analysis.FFT;
 
@@ -23,6 +24,7 @@ public abstract class Visual extends PApplet
 
 	
 	
+	
 	public void startMinim() 
 	{
 		minim = new Minim(this);
@@ -31,7 +33,8 @@ public abstract class Visual extends PApplet
 
 		bands = new float[(int) log2(frameSize)];
   		smoothedBands = new float[bands.length];
-
+		  
+		
 	}
 
 	float log2(float f) {
@@ -49,6 +52,7 @@ public abstract class Visual extends PApplet
 		{
 			throw new VisualException("You must call startListening or loadAudio before calling fft");
 		}
+		background(255, 157, 128);
 	}
 
 	
@@ -61,8 +65,10 @@ public abstract class Visual extends PApplet
 		}
 		amplitude = total / ab.size();
 		smothedAmplitude = PApplet.lerp(smothedAmplitude, amplitude, 0.1f);
+		
 	}
-
+	
+	
 
 	protected void calculateFrequencyBands() {
 		for (int i = 0; i < bands.length; i++) {
@@ -76,13 +82,16 @@ public abstract class Visual extends PApplet
 			average /= (float) w;
 			bands[i] = average * 5.0f;
 			smoothedBands[i] = lerp(smoothedBands[i], bands[i], 0.05f);
+			
 		}
+		
 	}
 
 	public void startListening()
 	{
 		ai = minim.getLineIn(Minim.MONO, frameSize, 44100, 16);
 		ab = ai.left;
+		
 	}
 
 	public void loadAudio(String filename)
