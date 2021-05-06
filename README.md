@@ -31,48 +31,36 @@ have a nice synergy that go well with the background image. Also the 5th effect 
 
 # Markdown Tutorial
 
-This is *emphasis*
+A list of the various effects in this program:
+- Line
+- Hourglass
+- Wallmount
+- Line&Circle
+- Square Layers
+- All Seeing Eye
+- Tunnel
 
-This is a bulleted list
 
-- Item
-- Item
 
-This is a numbered list
-
-1. Item
-1. Item
-
-This is a [hyperlink](http://bryanduggan.org)
-
-# Headings
-## Headings
-#### Headings
-##### Headings
-
-This is code:
-
-```Java
-public void render()
-{
-	ui.noFill();
-	ui.stroke(255);
-	ui.rect(x, y, width, height);
-	ui.textAlign(PApplet.CENTER, PApplet.CENTER);
-	ui.text(text, x + width * 0.5f, y + height * 0.5f);
-}
-```
-
-So is this without specifying the language:
-
+This is the code for Square Layers effect which is my favourite effect out of all of the rest. 
 ```
 public void render()
 {
-	ui.noFill();
-	ui.stroke(255);
-	ui.rect(x, y, width, height);
-	ui.textAlign(PApplet.CENTER, PApplet.CENTER);
-	ui.text(text, x + width * 0.5f, y + height * 0.5f);
+	float c = map(average, 0, 1, 0, 255);
+                stroke(c, 255, 255);        
+                strokeWeight(2);
+                noFill();
+                rectMode(CENTER);
+                float size = 10 + (lerpedAverage * 500);
+                rect(width / 2, height / 2, size, size);
+                size = 50 + (lerpedAverage * 500);
+                rect(width / 2, height / 2, size, size);
+                size = 100 + (lerpedAverage * 500);
+                rect(width / 2, height / 2, size, size);
+                size = 150 + (lerpedAverage * 500);
+                rect(width / 2, height / 2, size, size);
+                size = 200 + (lerpedAverage * 500);
+                rect(width / 2, height / 2, size, size);
 }
 ```
 These are some pictures showcaseing the different effects in the program:
@@ -105,13 +93,3 @@ The Tunnel effect
 This is a youtube video:
 
 [![YouTube](https://i9.ytimg.com/vi_webp/vsD3EG1qFpI/mqdefault.webp?time=1620312000000&sqp=CMD_z4QG&rs=AOn4CLAPhVK1yEPG9U_b426C84qVK9JfCw)](https://www.youtube.com/watch?v=vsD3EG1qFpI)
-
-This is a table:
-
-| Heading 1 | Heading 2 |
-|-----------|-----------|
-|Some stuff | Some more stuff in this column |
-|Some stuff | Some more stuff in this column |
-|Some stuff | Some more stuff in this column |
-|Some stuff | Some more stuff in this column |
-
